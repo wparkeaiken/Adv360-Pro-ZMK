@@ -2,25 +2,25 @@ macro_previous_page: macro_previous_page{
 compatible = "zmk,behavior-macro";
 label = "macro_previous_page";
 #binding-cells = <0>;
-bindings = <&kp RIGHT_COMMAND>, <&kp RIGHT_SHIFT>, <&kp TILDE>;
+bindings = <&sk RIGHT_COMMAND>, <&sk RIGHT_SHIFT>, <&kp TILDE>;
 };
 macro_next_page: macro_next_page{
 compatible = "zmk,behavior-macro";
 label = "macro_next_page";
 #binding-cells = <0>;
-bindings = <&kp RIGHT_COMMAND>, <&kp TILDE>;
+bindings = <&sk RIGHT_COMMAND>, <&kp TILDE>;
 };
 macro_tab_left: macro_tab_left{
 compatible = "zmk,behavior-macro";
 label = "macro_tab_left";
 #binding-cells = <0>;
-bindings = <&kp RIGHT_CONTROL>, <&kp RIGHT_COMMAND>, <&kp TAB>;
+bindings = <&sk RIGHT_CONTROL>, <&sk RIGHT_COMMAND>, <&kp TAB>;
 };
 macro_tab_right: macro_tab_right{
 compatible = "zmk,behavior-macro";
 label = "macro_tab_right";
 #binding-cells = <0>;
-bindings = <&kp RIGHT_CONTROL>, <&kp TAB>;
+bindings = <&sk RIGHT_CONTROL>, <&kp TAB>;
 };
 macro_dquotes: macro_dquotes{
 compatible = "zmk,behavior-macro";
