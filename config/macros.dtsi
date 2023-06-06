@@ -2,25 +2,37 @@ macro_previous_page: macro_previous_page{
 compatible = "zmk,behavior-macro";
 label = "macro_previous_page";
 #binding-cells = <0>;
-bindings = <&sk RIGHT_COMMAND>, <&sk RIGHT_SHIFT>, <&kp TILDE>;
+bindings 
+    = <&macro_press &kp RIGHT_COMMAND &kp RIGHT_SHIFT>
+    , <&macro_tap &kp TILDE>
+    , <&macro_release &kp RIGHT_COMMAND &kp RIGHT_SHIFT>
 };
 macro_next_page: macro_next_page{
 compatible = "zmk,behavior-macro";
 label = "macro_next_page";
 #binding-cells = <0>;
-bindings = <&sk RIGHT_COMMAND>, <&kp TILDE>;
+bindings 
+    = <&macro_press &kp RIGHT_COMMAND>
+    , <&macro_tap &kp TILDE>
+    , <&macro_release &kp RIGHT_COMMAND>
 };
 macro_tab_left: macro_tab_left{
 compatible = "zmk,behavior-macro";
 label = "macro_tab_left";
 #binding-cells = <0>;
-bindings = <&sk RIGHT_CONTROL>, <&sk RIGHT_COMMAND>, <&kp TAB>;
+bindings 
+    = <&macro_press &kp RIGHT_COMMAND &kp RIGHT_CONTROL>
+    , <&macro_tap &kp TAB>
+    , <&macro_release &kp RIGHT_COMMAND &kp RIGHT_CONTROL>
 };
 macro_tab_right: macro_tab_right{
 compatible = "zmk,behavior-macro";
 label = "macro_tab_right";
 #binding-cells = <0>;
-bindings = <&sk RIGHT_CONTROL>, <&kp TAB>;
+bindings 
+    = <&macro_press &kp RIGHT_CONTROL>
+    , <&macro_tap &kp TAB>
+    , <&macro_release &kp RIGHT_CONTROL>
 };
 macro_dquotes: macro_dquotes{
 compatible = "zmk,behavior-macro";
