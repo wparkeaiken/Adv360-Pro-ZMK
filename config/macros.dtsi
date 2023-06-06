@@ -6,6 +6,7 @@ bindings
     = <&macro_press &kp RIGHT_COMMAND &kp RIGHT_SHIFT>
     , <&macro_tap &kp TILDE>
     , <&macro_release &kp RIGHT_COMMAND &kp RIGHT_SHIFT>
+    ;
 };
 macro_next_page: macro_next_page{
 compatible = "zmk,behavior-macro";
@@ -15,6 +16,7 @@ bindings
     = <&macro_press &kp RIGHT_COMMAND>
     , <&macro_tap &kp TILDE>
     , <&macro_release &kp RIGHT_COMMAND>
+    ;
 };
 macro_tab_left: macro_tab_left{
 compatible = "zmk,behavior-macro";
@@ -24,6 +26,7 @@ bindings
     = <&macro_press &kp RIGHT_COMMAND &kp RIGHT_CONTROL>
     , <&macro_tap &kp TAB>
     , <&macro_release &kp RIGHT_COMMAND &kp RIGHT_CONTROL>
+    ;
 };
 macro_tab_right: macro_tab_right{
 compatible = "zmk,behavior-macro";
@@ -33,6 +36,7 @@ bindings
     = <&macro_press &kp RIGHT_CONTROL>
     , <&macro_tap &kp TAB>
     , <&macro_release &kp RIGHT_CONTROL>
+    ;
 };
 macro_dquotes: macro_dquotes{
 compatible = "zmk,behavior-macro";
